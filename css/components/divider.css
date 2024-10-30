@@ -1,0 +1,124 @@
+/* Ínicio */
+.home-line-decoration-divider {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    max-width: 4.37rem;
+    background-color: #000;
+    animation: line-left-right-small 4s;
+}
+.home-roles-section-divider {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background-color: #000;
+    animation: line-left-right-small 1.2s;
+}
+
+/* Sobre */
+.about-divider {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background-color: #000;
+    animation: line-left-right-small 1.2s;
+}
+
+.about-divider-education-experience {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background-color: #000;
+    animation: line-left-right-small 1.2s;
+}
+
+/* Projetos */
+.projects-divider {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background-color: #000;
+    animation: line-left-right-large 1.2s;
+}
+
+/* Contato */
+.contact-divider {
+    display: block;
+    width: 100%;
+    height: .1rem;
+    background-color: #000;
+    animation: line-left-right-small 1.2s;
+}
+
+@media (min-width: 768px) {
+    /* Início */
+    .home-line-decoration-divider {
+        max-width: 10.4rem;
+        animation: line-left-right-large 4s;
+    }
+    .home-roles-section-divider {
+        width: .1rem;
+        height: 100%;
+        animation: line-top-bottom-large 1.3s;
+    }
+
+    /* Sobre */
+    .about-divider {
+        width: 100%;
+        height: .1rem;
+        animation: line-left-right-large 1.2s;
+    }
+    .about-divider-education-experience {
+        display: none;
+    }
+
+    /* Projetos */
+    .projects-divider {
+        width: 100%;
+        height: .1rem;
+        animation: line-left-right-large 1.2s;
+    }
+
+    /* Contato */
+    .contact-divider {
+        width: .1rem;
+        height: 100%;
+        animation: line-top-bottom-large 1.2s;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Projetos */
+    .projects-divider {
+        width: .1rem;
+        height: 100%;
+        animation: line-top-bottom-large 1.2s;
+    }
+}
+
+@keyframes line-left-right-small {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes line-left-right-large {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes line-top-bottom-large {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
