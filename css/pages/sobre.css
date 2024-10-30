@@ -1,0 +1,252 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.1rem;
+    background-color: #f5f5f5;
+    & .about-banner {
+        width: 100%;
+        height: 6rem;
+        object-fit: cover;
+    }
+    & .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 1.5rem 1.25rem ;
+        & .about-divider-container {
+            width: 100%;
+        }
+        & .about-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            & .about-title {
+                font-size: 1.8rem;
+                font-weight: bold;
+                word-break: break-all;
+                color: #000;
+            }
+            & .about-text-container {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                & .about-text {
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    line-height: 1.2rem;
+                    color: #000;
+                }
+            }
+        } 
+        & .about-education-experience {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+            & .about-education {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                & .about-education-title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #000;
+                }
+                & .about-education-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8rem;
+                    & .about-education-item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .4rem;
+                        & .about-education-subtitle {
+                            font-size: 1.1rem;
+                            font-weight: normal;
+                            color: #000;
+                        }
+                        & .about-education-course {
+                            font-size: 1rem;
+                            font-weight: lighter;
+                            color: #000;
+                        }
+                        & .about-education-time {
+                            font-size: .9rem;
+                            font-weight: lighter;
+                            color: #000;
+                        }
+                    }
+                }
+            }  
+            & .about-experience {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                & .about-experience-title {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #000;
+                }
+                & .about-experience-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .8rem;
+                    & .about-experience-item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .4rem;
+                        & .about-experience-subtitle {
+                            font-size: 1.1rem;
+                            font-weight: normal;
+                            color: #000;
+                        }
+          
+                        & .about-experience-function {
+                            font-size: 1rem;
+                            font-weight: lighter;
+                            color: #000;
+                        }
+                        & .about-experience-time {
+                            font-size: .9rem;
+                            font-weight: lighter;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        & .about-skills {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            & .about-skills-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #000;
+            }
+            & .about-skills-container {
+                display: flex;
+                flex-direction: column;
+                gap: .8rem;
+                & .about-skills-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .3rem;
+                    & .about-skills-subtitle {
+                        font-size: 1.1rem;
+                        font-weight: normal;
+                        color: #000;
+                    }
+                    & .about-skills-text {
+                        font-size: 1rem;
+                        font-weight: lighter;
+                        line-height: 1.2rem;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .about-page {
+        margin-top: 5.4rem;
+        & .about-banner {
+            height: 15rem;
+        }
+        & .about-section {
+            gap: 4rem;
+            padding: 2.5rem;
+            & .about-divider-container {
+                width: 100%;
+                max-width: 55rem;
+            }
+            & .about-container {
+                justify-content: center;
+                gap: 1.5rem;
+                max-width: 48rem;
+                & .about-title {
+                    font-size: 2rem;
+                }
+                & .about-text-container {
+                    gap: .8rem;
+                    & .about-text {
+                        font-size: 1.3rem;
+                        line-height: 1.7rem;
+                    }
+                }
+            } 
+            & .about-education-experience {
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 48rem;
+                & .about-education {
+                    gap: 1.5rem;
+                    & .about-education-title {
+                        font-size: 2rem;
+                    }
+                    & .about-education-container {
+                        gap: 1rem;
+                        & .about-education-item {
+                            gap: .5rem;
+                            & .about-education-subtitle {
+                                font-size: 1.3rem;
+                            }
+                            & .about-education-course {
+                                font-size: 1.2rem;
+                            }
+                            & .about-education-time {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                & .about-experience {
+                    gap: 1.5rem;
+                    & .about-experience-title {
+                        font-size: 2rem;
+                    }
+                    & .about-experience-container {
+                        gap: 1rem;
+                        & .about-experience-item {
+                            gap: .5rem;
+                            & .about-experience-subtitle {
+                                font-size: 1.3rem;
+                            }
+                            & .about-experience-function {
+                                font-size: 1.2rem;
+                            }
+                            & .about-experience-time {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            & .about-skills {
+                gap: 1.5rem;
+                width: 100%;
+                max-width: 48rem;
+                & .about-skills-title {
+                    font-size: 2rem;
+                }
+                & .about-skills-container {
+                    gap: 1rem;
+                    & .about-skills-item {
+                        gap: .5rem;
+                        & .about-skills-subtitle {
+                            font-size: 1.3rem;
+                        }
+                        & .about-skills-text {
+                            font-size: 1.2rem;
+                            line-height: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
