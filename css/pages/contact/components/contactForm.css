@@ -1,0 +1,16 @@
+.contact-form {
+    width: 100%;
+    .form-control {
+        background-color: transparent;
+        border: solid .03rem #000;
+    }
+    .form-control::placeholder {
+        font-size: .9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-form {
+        max-width: 20rem;
+    }
+}

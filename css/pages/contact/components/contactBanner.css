@@ -1,0 +1,11 @@
+.contact-banner {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .contact-banner {
+        height: 15rem;
+    }
+}
