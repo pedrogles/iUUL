@@ -1,0 +1,59 @@
+.about-education {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & .about-education-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+    }
+    & .about-education-container {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        & .about-education-item {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+            & .about-education-subtitle {
+                font-size: 1.1rem;
+                font-weight: normal;
+                color: #000;
+            }
+            & .about-education-course {
+                font-size: 1rem;
+                font-weight: lighter;
+                color: #000;
+            }
+            & .about-education-time {
+                font-size: .9rem;
+                font-weight: lighter;
+                color: #000;
+            }
+        }
+    }
+}  
+
+@media (min-width: 768px) {
+    .about-education {
+        gap: 1.5rem;
+        & .about-education-title {
+            font-size: 2rem;
+        }
+        & .about-education-container {
+            gap: 1rem;
+            & .about-education-item {
+                gap: .5rem;
+                & .about-education-subtitle {
+                    font-size: 1.3rem;
+                }
+                & .about-education-course {
+                    font-size: 1.2rem;
+                }
+                & .about-education-time {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
