@@ -90,22 +90,42 @@
                 <span class="contact-divider"></span>
                 <!-- Formulário -->
                 <div class="contact-form-container">
-                    <form class="contact-form">
+                    <form id="contact-form" class="contact-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="name" placeholder="Luiz Felipe Albuquerque">
+                            <input 
+                                id="name"
+                                name="name" 
+                                class="form-control"  
+                                type="text" 
+                                placeholder="Luiz Felipe Albuquerque">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="luizfelipealbuquerque@email.com">
+                            <input 
+                                id="email"
+                                name="email" 
+                                class="form-control"
+                                type="email"   
+                                placeholder="luizfelipealbuquerque@email.com">
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Criação de Landing Page">
+                            <input 
+                                id="subject"
+                                name="subject" 
+                                class="form-control"
+                                type="text"
+                                placeholder="Criação de Landing Page">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Olá, tudo bem? Estou entrando em contato para..."></textarea>
+                            <textarea 
+                                id="message"
+                                name="message"
+                                class="form-control" 
+                                rows="5" 
+                                placeholder="Olá, tudo bem? Estou entrando em contato para..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-dark w-100">Enviar</button>
                     </form>
@@ -142,10 +162,43 @@
                 </p>
             </div>
         </footer>
+        <!-- Scripts -->
+        <!-- Bootstrap -->
         <script 
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous">
         </script>
+        <!-- EmailJs -->
+        <script 
+            type="text/javascript" 
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>  
+        <script type="text/javascript">
+            (function() {
+                emailjs.init({
+                publicKey: "kjphTqXT5RIVaQjVa",
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_h1g58qd', 'template_8oop4y9', this)
+                        .then(() => {
+                            console.log('SUCCESS!');
+                            alert('Mensagem enviada.');
+                            this.reset();
+                        }, (error) => {
+                            console.log('FAILED...', error);
+                            alert('Erro ao enviar o formulário' + (error.text || 'Detalhes do erro não disponíveis'));
+                            this.reset();
+                        });
+                });
+            }
+        </script>
+        <!-- GetFullYear -->
         <script src="../js/getFullYear.js"></script>
     </body>
 </html>
