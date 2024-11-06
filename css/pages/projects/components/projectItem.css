@@ -24,9 +24,10 @@
         display: flex;
         flex-wrap: wrap;
         gap: .5rem;
-        & .project-item-tecnologie-link {
-            text-decoration: none;
-            & .project-item-tecnologie {
+        & .project-item-tecnologie-btn {
+            background-color: transparent;
+            border: none;
+            & .project-item-tecnologie-img {
                 width: 1.8rem;
             }
         }
@@ -63,7 +64,7 @@
         }
         & .project-item-tecnologies-container {
             gap: 1rem;
-            & .project-item-tecnologie-link .project-item-tecnologie {
+            & .project-item-tecnologie-btn .project-item-tecnologie-img {
                 width: 2rem;
             }
         }
@@ -94,7 +95,7 @@
         }
         & .project-item-tecnologies-container {
             gap: 1rem;
-            & .project-item-tecnologie-link .project-item-tecnologie {
+            & .project-item-tecnologie-btn .project-item-tecnologie-img {
                 width: 2rem;
             }
         }
