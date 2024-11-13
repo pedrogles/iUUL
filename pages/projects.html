@@ -17,11 +17,16 @@
                 <div class="container-fluid">
                     <!-- Logo link -->
                     <a class="navbar-logo-link" href="./home.html">
-                        <img 
-                            class="navbar-logo" 
-                            src="../assets/icons/logo.svg" 
-                            alt="Logotipo preto com as metades das letras 'P' e 'G' entrelaçadas, formando as iniciais de Pedro Gabriel."
-                        >
+                        <button type="button" class="navbar-logo-btn btn btn-transparent position-relative">
+                            <img 
+                                class="navbar-logo" 
+                                src="../assets/icons/logo.svg" 
+                                alt="Logotipo preto com as metades das letras 'P' e 'G' entrelaçadas, formando as iniciais de Pedro Gabriel."
+                            >
+                            <span id="message-badge" class="navbar-logo-badge position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
                     </a>
                     <!-- Botão do menu -->
                     <button 
@@ -381,8 +386,10 @@
             crossorigin="anonymous">
         </script>
         <!-- GetFullYear -->
-        <script src="../js/getFullYear.js"></script>
+        <script src="../js/utils/getFullYear.js"></script>
         <!-- Popover -->
-        <script src="../js/popoverBootstrap.js"></script>
+        <script src="../js/bootstrap/popoverBootstrap.js"></script>
+        <!-- Message Badge -->
+        <script src="../js/localStorage/messagesBadge.js"></script>
     </body>
 </html>

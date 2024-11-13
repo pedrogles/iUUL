@@ -8,7 +8,7 @@
 .projects-page {
     display: flex;
     flex-direction: column;
-    margin-top: 4.1rem;
+    margin-top: 4.65rem;
     background-color: #f5f5f5;
     & .projects-container {
         display: flex;
@@ -29,9 +29,9 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .projects-page {
-        margin-top: 5.4rem;
+        margin-top: 5.85rem;
         & .projects-container {
             gap: 2rem;
             padding: 2.5rem;
@@ -47,7 +47,7 @@
 
 @media (min-width: 992px) {
     .projects-page {
-        margin-top: 5.4rem;
+        margin-top: 5.45rem;
         & .projects-container {
             justify-content: center;
             flex-direction: row;

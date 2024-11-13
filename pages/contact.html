@@ -17,11 +17,16 @@
                 <div class="container-fluid">
                     <!-- Logo link -->
                     <a class="navbar-logo-link" href="./home.html">
-                        <img 
-                            class="navbar-logo" 
-                            src="../assets/icons/logo.svg" 
-                            alt="Logotipo preto com as metades das letras 'P' e 'G' entrelaçadas, formando as iniciais de Pedro Gabriel."
-                        >
+                        <button type="button" class="navbar-logo-btn btn btn-transparent position-relative">
+                            <img 
+                                class="navbar-logo" 
+                                src="../assets/icons/logo.svg" 
+                                alt="Logotipo preto com as metades das letras 'P' e 'G' entrelaçadas, formando as iniciais de Pedro Gabriel."
+                            >
+                            <span id="message-badge" class="navbar-logo-badge position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+                              <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
                     </a>
                     <!-- Botão do menu -->
                     <button 
@@ -173,36 +178,11 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
             crossorigin="anonymous">
         </script>
-        <!-- EmailJs -->
-        <script 
-            type="text/javascript" 
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-        </script>  
-        <script type="text/javascript">
-            (function() {
-                emailjs.init({
-                publicKey: "kjphTqXT5RIVaQjVa",
-                });
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    emailjs.sendForm('service_h1g58qd', 'template_8oop4y9', this)
-                        .then(() => {
-                            console.log('SUCCESS!');
-                            alert('Mensagem enviada.');
-                            this.reset();
-                        }, (error) => {
-                            console.log('FAILED...', error);
-                            alert('Erro ao enviar o formulário' + (error.text || 'Detalhes do erro não disponíveis'));
-                            this.reset();
-                        });
-                });
-            }
-        </script>
+        <!-- Local Storage -->
+        <script src="../js/localStorage/messagesForm.js"></script>
+        <!-- Message Badge -->
+        <script src="../js/localStorage/messagesBadge.js"></script>
         <!-- GetFullYear -->
-        <script src="../js/getFullYear.js"></script>
+        <script src="../js/utils/getFullYear.js"></script>
     </body>
 </html>
