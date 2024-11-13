@@ -1,9 +1,8 @@
-# Desafio #1
+# Desafio #2
 
-Portfólio Web desenvolvido para o Desafio #1 da residência iUUL.
+Portfólio Web desenvolvido para o Desafio #2 da residência iUUL.
 
-Para atender aos requisitos do desafio, o portfólio inclui um **menu de navegação**, **rodapé** com links para redes sociais, **página de apresentação**, **formação**, 
-**atuação profissional**, um **formulário de contato** e um **portfólio de projetos**, cada um contendo as tecnologias utilizadas e suas respectivas descrições.
+Para atender aos requisitos do desafio, o portfólio foi atualizado para armazenar mensagens do formulário de contato no localStorage e exibi-las em uma nova página. As mensagens são salvas como objetos em um array no localStorage e listadas em uma página separada. Também foi implementada a funcionalidade de remover mensagens, seja individualmente ou todas as mensagens armazenadas.
 
 ## Sumário
 
@@ -17,7 +16,9 @@ Para atender aos requisitos do desafio, o portfólio inclui um **menu de navega�
 - Navegação entre páginas
 - Exibição Interativa dos Projetos
 - Descrição Interativa das Tecnologias
-- Formulário de Contato com EmailJS
+- Formulário de contato que armazena os dados no localStorage
+- Listagem das mensagens salvas no localStorage em uma página dedicada
+- Badge informativo exibindo a quantidade de mensagens armazenadas no localStorage
 
 ## Tecnologias Usadas
 
@@ -25,7 +26,6 @@ Para atender aos requisitos do desafio, o portfólio inclui um **menu de navega�
 - **CSS**: Estilização e definição do design visual, garantindo uma aparência limpa e atraente.
 - **JavaScript**: Para interatividade e funcionalidades dinâmicas nas páginas.
 - **Bootstrap**: Framework para estilização rápida e responsiva, facilitando o design adaptável para diferentes dispositivos.
-- **EmailJS**: Para envio de mensagens no formulário de contato sem backend.
 
 ## Instruções para Iniciar a Aplicação com Live Server
 
