@@ -85,10 +85,10 @@
             padding: .6rem 1.5rem;
         }
         & .message-link .message-badge {
-            font-size: .4rem;
+            font-size: .5rem;
             padding: .3rem .5rem;
             top: 0;
-            left: 7rem;
+            left: 6.8rem;
         }
     }
 }
