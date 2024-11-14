@@ -21,10 +21,4 @@ contactForm.addEventListener('submit', _ => {
     localStorage.setItem(email.value, JsonFormData);
 
     contactForm.reset();
-})
-
-// Get all storage items
-for(let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    console.log(localStorage.getItem(key))
-};
+});

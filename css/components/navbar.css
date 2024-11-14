@@ -12,10 +12,14 @@
                     height: 2.2rem;
                 }
                 & .navbar-logo-badge {
+                    display: none;
                     font-size: .5rem;
                     padding: .3rem .5rem;
                     top: .5rem;
                 }
+            }
+            & .navbar-logo-btn:active {
+                border: none;
             }
         }
         & .navbar-toggler {
