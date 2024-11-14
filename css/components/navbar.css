@@ -5,21 +5,9 @@
         padding: .8rem 0;
         & .navbar-logo-link {
             padding-left: 1.6rem;
-            & .navbar-logo-btn {
-                display: flex;
-                & .navbar-logo {
-                    width: 2.2rem;
-                    height: 2.2rem;
-                }
-                & .navbar-logo-badge {
-                    display: none;
-                    font-size: .5rem;
-                    padding: .3rem .5rem;
-                    top: .5rem;
-                }
-            }
-            & .navbar-logo-btn:active {
-                border: none;
+            & .navbar-logo {
+                width: 2.2rem;
+                height: 2.2rem;
             }
         }
         & .navbar-toggler {
@@ -37,6 +25,19 @@
                 }
             }
         }
+        & .message-link {
+            position: relative;
+            border: none;
+            padding: 0;
+            & .message-badge {
+                position: absolute;
+                display: none;
+                font-size: .4rem;
+                padding: .3rem .5rem;
+                top: 0;
+                left: 5.2rem;
+            }
+        }
     }
 }
 
@@ -46,16 +47,9 @@
             padding: 1rem 0;
             & .navbar-logo-link {
                 padding-left: 2.5rem;
-                & .navbar-logo-btn {
-                    & .navbar-logo {
-                        width: 3rem;
-                        height: 3rem;
-                    }
-                    & .navbar-logo-badge {
-                        font-size: .6rem;
-                        padding: .4rem .6rem;
-                        top: .5rem;
-                    }
+                & .navbar-logo {
+                    width: 3rem;
+                    height: 3rem;
                 }
             }  
             & .navbar-toggler {
@@ -79,23 +73,22 @@
     .navbar .container-fluid {
         & .navbar-logo-link {
             padding-left: 3.4rem;
-            & .navbar-logo-btn {
-                & .navbar-logo {
-                    width: 3rem;
-                    height: 3rem;
-                }
-                & .navbar-logo-badge {
-                    font-size: .6rem;
-                    padding: .4rem .6rem;
-                    top: .5rem;
-                }
+            & .navbar-logo {
+                width: 3rem;
+                height: 3rem;
             }
         }  
         & .navbar-toggler {
             padding-right: 2.5rem;
         }
         & .navbar-collapse .navbar-nav .nav-link {
-            padding: .6rem 1.8rem;
+            padding: .6rem 1.5rem;
+        }
+        & .message-link .message-badge {
+            font-size: .4rem;
+            padding: .3rem .5rem;
+            top: 0;
+            left: 7rem;
         }
     }
 }

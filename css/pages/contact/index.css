@@ -9,7 +9,7 @@
 .contact-page {
     display: flex;
     flex-direction: column;
-    margin-top: 4.65rem;
+    margin-top: 3.975rem;
     background-color: #f5f5f5;
     & .contact-container {
         display: flex;
@@ -22,7 +22,7 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
     .contact-page {
-        margin-top: 5.85rem;
+        margin-top: 5.1rem;
         & .contact-container {
             flex-direction: row;
             justify-content: center;
