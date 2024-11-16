@@ -47,7 +47,7 @@
 
 @media (min-width: 992px) {
     .projects-page {
-        margin-top: 5.45rem;
+        margin-top: 5.4rem;
         & .projects-container {
             justify-content: center;
             flex-direction: row;
