@@ -11,9 +11,8 @@ const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', _ => {
     if(localStorage.getItem('messages')) {
         // adiciona item a lista já existente de mensagens
-        const messageList = localStorage.getItem('messages');
-        const jsonMessageList = JSON.parse(messageList);
-        const lastId = jsonMessageList[jsonMessageList.length - 1].id;
+        const messageList = JSON.parse(localStorage.getItem('messages'));
+        const lastId = messageList[messageList.length - 1].id;
 
         const formData = {
             id: lastId + 1,
@@ -23,9 +22,9 @@ contactForm.addEventListener('submit', _ => {
             message: message.value
         };
 
-        jsonMessageList.push(formData);
+        messageList.push(formData);
 
-        localStorage.setItem('messages', JSON.stringify(jsonMessageList));
+        localStorage.setItem('messages', JSON.stringify(messageList));
         contactForm.reset();
     } else { 
         // cria uma nova lista de mensagens
