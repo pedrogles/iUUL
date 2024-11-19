@@ -14,8 +14,8 @@ Este repositório contém todas as soluções e implementações dos desafios pr
 - **Branches:** Cada branch representa um desafio específico. Você pode alternar entre elas para visualizar as soluções correspondentes.
   
 - **Desafios:** 
-  - Desafio 1: Desenvolvimento de páginas web - Criação de um Portfólio
-  - Desafio 2: 
+  - Desafio 1: Criação de um Portfólio
+  - Desafio 2: Armazenamento e Gestão de Mensagens de Contato com localStorage
   - Desafio 3: 
   - Desafio 4: 
 
