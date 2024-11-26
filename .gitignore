@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+dist/
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios temporários
+temp/
+tmp/
+.cache/
+
+# Editor e sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+# Arquivos de pacotes travados
+package-lock.json
+yarn.lock
+
+# Coverage (se usar ferramentas de teste)
+coverage/
+
+# Outras dependências locais
+*.local
