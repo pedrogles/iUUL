@@ -45,7 +45,8 @@ export class Funcionario extends Pessoa implements IUsuario {
         this._cargo = novaLista;
     };
 
-    public autenticar(): void {
+    public autenticar(): boolean {
         this._autenticado = true;
+        return true;
     };
 };

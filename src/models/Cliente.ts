@@ -48,7 +48,8 @@ export class Cliente extends Pessoa implements IUsuario {
         this._enderecos = novaLista;
     };
 
-    public autenticar(): void {
+    public autenticar(): boolean {
         this._autenticado = true;
+        return true;
     };
 };
