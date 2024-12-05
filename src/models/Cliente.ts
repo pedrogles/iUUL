@@ -31,10 +31,6 @@ export class Cliente extends Pessoa implements IUsuario {
         this._vip = novoStatus;
     };
 
-    private set enderecos(novoEndereco: Endereco[]) {
-        this._enderecos = novoEndereco;
-    };
-
     // Methods 
     public adicionarEndereço(cep: string, logradouro: string, numero: string, complemento: string, cidade: string, estado: string) {
         if(this._enderecos.length === 0) {
@@ -49,7 +45,7 @@ export class Cliente extends Pessoa implements IUsuario {
     
     public removerEndereço(id: number) {
         const novaLista = this._enderecos.filter(endereco => endereco.id !== id);
-        this.enderecos = novaLista;
+        this._enderecos = novaLista;
     };
 
     public autenticar(): void {
