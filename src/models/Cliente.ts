@@ -22,20 +22,19 @@ export class Cliente extends Pessoa implements IUsuario {
         return this._vip;
     };
 
-    public get enderecos(): Endereco[] | string {
-        if(this._enderecos.length > 0) {
-            return this._enderecos;
-        } else {
-            return 'Você não tem nenhum endereço cadastrado';
-        };
-    };
-
     // Setters
     public set vip(novoStatus: boolean) {
         this._vip = novoStatus;
     };
 
     // Methods 
+    public listarEnderecos(): Endereco[] | string {
+        if(this._enderecos.length > 0) {
+            return this._enderecos;
+        } else {
+            return 'Você não tem nenhum endereço cadastrado';
+        };
+    };
     public adicionarEndereço(cep: string, logradouro: string, numero: string, complemento: string, cidade: string, estado: string) {
         if(this._enderecos.length === 0) {
             const novoEndereço = new Endereco(1, cep, logradouro, numero, complemento, cidade, estado);
