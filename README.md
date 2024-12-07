@@ -16,7 +16,7 @@ Este repositório contém todas as soluções e implementações dos desafios pr
 - **Desafios:** 
   - Desafio 1: Criação de um Portfólio
   - Desafio 2: Armazenamento e Gestão de Mensagens de Contato com localStorage
-  - Desafio 3: 
+  - Desafio 3: Desenvolvimento de aplicação OO utilizando Typescript
   - Desafio 4: 
 
 ## Como Navegar
