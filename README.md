@@ -1,75 +1,48 @@
-# Desafio #2
+# Desafio #3
 
-Portfólio Web desenvolvido para o Desafio #2 da residência iUUL.
+Desenvolvimento de aplicação console utilizando TypeScript para implementar conceitos de Orientação a Objetos para o Desafio #3 da residência iUUL.
 
-Para atender aos requisitos do desafio, o portfólio foi atualizado para armazenar mensagens do formulário de contato no localStorage e exibi-las em uma nova página. As mensagens são salvas como objetos em um array no localStorage e listadas em uma página separada. Também foi implementada a funcionalidade de remover mensagens, seja individualmente ou todas as mensagens armazenadas.
+Este projeto tem como objetivo a criação de uma aplicação console em TypeScript, com foco em conceitos como abstração, encapsulamento, herança, e interfaces. A aplicação simula operações bancárias com classes abstratas, concretas e associações entre elas, conforme o diagrama fornecido no desafio.
 
 ## Sumário
 
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Usadas](#tecnologias-usadas)
-- [Instruções para Iniciar a Aplicação com Live Server](#instruções-para-iniciar-a-aplicação-com-live-server)
-- [Instruções para Iniciar a Aplicação Sem Live Server](#instruções-para-iniciar-a-aplicação-sem-live-server)
+- [Como Executar o Projeto](#como-executar-o-projeto)
 
 ## Funcionalidades
 
-- Navegação entre páginas
-- Exibição Interativa dos Projetos
-- Descrição Interativa das Tecnologias
-- Formulário de contato que armazena os dados no localStorage
-- Listagem das mensagens salvas no localStorage em uma página dedicada
-- Badge informativo exibindo a quantidade de mensagens armazenadas no localStorage
+- Cadastro de Funcionários e Clientes
+- Depósitos e Saques
+- Transferências
+- Cálculo de Saldos
+- Controle de Limite
+- Validação de Usuário
 
 ## Tecnologias Usadas
 
-- **HTML**: Estruturação das páginas e dos elementos do portfólio.
-- **CSS**: Estilização e definição do design visual, garantindo uma aparência limpa e atraente.
-- **JavaScript**: Para interatividade e funcionalidades dinâmicas nas páginas.
-- **Bootstrap**: Framework para estilização rápida e responsiva, facilitando o design adaptável para diferentes dispositivos.
+- **Node.js**: Ambiente de execução.
+- **TypeScript**: Para aplicar tipagem estática e conceitos avançados de POO.
+- **ts-node**: Ferramenta que permite executar arquivos TypeScript diretamente no ambiente Node.js, eliminando a necessidade de transpilar o código para JavaScript antes da execução. Isso facilita o processo de desenvolvimento e teste da aplicação.
+- **npm**: Gerenciador de pacotes usado para instalar dependências e configurar o ambiente do projeto.
 
-## Instruções para Iniciar a Aplicação com Live Server
+## Como Executar o Projeto
 
-Para iniciar a aplicação usando o Live Server no Visual Studio Code, siga os passos abaixo:
+### Pré-requisitos
+   1. Node.js e npm instalados.
+   2. TypeScript instalado globalmente (npm install -g typescript).
 
-### Passo 1: Instalar o Live Server
+### Ir para branch do desafio #3
+   ```
+   git checkout desafio-3
+   ```
 
-1. Abra o **Visual Studio Code**.
-2. Vá até a aba de **Extensões** clicando no ícone na barra lateral esquerda ou pressionando `Ctrl + Shift + X`.
-3. No campo de pesquisa, digite **"Live Server"**.
-4. Clique em **"Install"** para instalar a extensão Live Server.
+### Instalar Dependências
+   ```
+   npm install
+   ```
 
-### Passo 2: Abrir o Projeto
-
-1. Abra a pasta do seu projeto em **File** > **Open Folder** e selecione a pasta que contém seu arquivo HTML.
-
-### Passo 3: Abrir o Arquivo HTML
-
-1. Navegue até o arquivo HTML no painel de arquivos à esquerda e clique duas vezes para abri-lo.
-
-### Passo 4: Iniciar o Live Server
-
-1. Clique com o botão direito do mouse no arquivo HTML aberto e selecione **"Open with Live Server"**.
-   - Alternativamente, você pode usar o atalho de teclado: `Alt + L` e em seguida `Alt + O`.
-
-2. O Live Server abrirá automaticamente uma nova janela do navegador com a URL local (geralmente algo como `http://127.0.0.1:5500/seu-arquivo.html`).
-
-## Instruções para Iniciar a Aplicação Sem Live Server
-
-Caso você prefira iniciar a aplicação sem usar o Live Server, siga os passos abaixo:
-
-### Passo 1: Navegar até a Pasta do Repositório
-
-1. Abra seu gerenciador de arquivos e navegue até a pasta do seu repositório, `iUUL`.
-
-### Passo 2: Acessar a Pasta "pages"
-
-1. Dentro da pasta do repositório, localize e selecione a pasta **"pages"**.
-
-### Passo 3: Abrir o Arquivo HTML
-
-1. Clique com o botão direito do mouse sobre o arquivo **"inicio.html"**.
-2. Escolha a opção **"Abrir com"** e selecione o navegador de sua preferência.
-
-### Passo 4: Visualizar a Aplicação
-
-- O arquivo `inicio.html` será aberto no navegador, permitindo que você visualize sua aplicação. Para ver as alterações feitas nos arquivos, lembre-se de recarregar a página no navegador sempre que fizer modificações.
+### Rodar projeto
+   ```
+   npm start
+   ```
